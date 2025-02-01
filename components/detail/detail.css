@@ -1,0 +1,142 @@
+.detail {
+    overflow-y: scroll;
+    flex: 1;
+
+
+    .user {
+
+
+        padding: 30px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid #dddddd35;
+
+
+
+        img {
+            width: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .info {
+
+
+
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .option {
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgba(17, 25, 40, 0.5);
+                    border-radius: 50%;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .photos {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .photoitem {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetail {
+
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        img {
+                            width: 30px;
+                            height: 40px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        span {
+
+                            font-size: 14px;
+                            color: lightgray;
+                            font-weight: 300;
+
+                        }
+
+
+
+                    }
+
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+
+
+
+
+                    }
+                }
+
+
+
+            }
+
+        }
+
+        .block {
+            padding: 10px 20px;
+            color: white;
+            background-color: rgba(230, 74, 105, 0.663);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+
+
+            &:hover {
+                background-color: rgba(208, 7, 47, 0.663);
+
+            }
+
+
+        }
+
+        .log {
+
+
+            background-color: rgb(46, 141, 109);
+
+
+
+            &:hover {
+                background-color: rgb(13, 73, 54);
+
+            }
+
+        }
+    }
+
+
+
+}

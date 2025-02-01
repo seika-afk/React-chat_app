@@ -1,0 +1,221 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border-left: 2px solid rgba(100, 117, 106, 0.5);
+    border-right: 2px solid rgba(100, 117, 106, 0.5);
+
+
+    .top {
+
+        border-bottom: 1px solid rgba(100, 117, 106, 0.5);
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .user {
+
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .texts {
+
+                span {
+                    font-weight: 700;
+
+                }
+
+                p {
+                    margin-top: 5px;
+                    font-size: 13px;
+                    color: #a5a5a5;
+                }
+
+            }
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+
+            img {
+
+                width: 38px;
+                cursor: pointer;
+                padding: 7px;
+            }
+        }
+
+
+    }
+
+
+    .center {
+        padding: 30px;
+        flex: 1;
+
+        overflow: hidden;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+
+        .message {
+
+
+            max-width: 70%;
+            display: flex;
+            gap: 10px;
+
+            &.own {
+                align-self: flex-end;
+
+                .texts {
+                    p {
+                        background-color: #5183fe;
+
+
+                    }
+                }
+
+            }
+
+
+
+
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+
+            }
+
+            .texts {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                flex: 1;
+
+                img {
+
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 10px;
+                    object-fit: cover;
+
+                }
+
+
+                p {
+
+                    padding: 20px;
+                    background-color: rgba(17, 25, 40, 0.5);
+                    border-radius: 10px;
+                }
+
+                span {
+                    font-size: 10px;
+                }
+            }
+
+
+        }
+    }
+
+    .center:hover {
+        overflow-y: scroll;
+    }
+
+
+    .bottom {
+        margin-top: auto;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #dddddd35;
+
+        .icons {
+            display: flex;
+            gap: 16px;
+
+
+        }
+
+        img {
+
+
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+        }
+
+        input {
+            flex: 1;
+            background-color: rgba(17, 25, 40, 0.5);
+            outline: none;
+            border: none;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .emoji {
+
+
+
+            position: relative;
+
+            .picker {
+
+
+                position: absolute;
+                left: 0;
+                bottom: 50px;
+
+            }
+        }
+
+        .send {
+
+            background-color: #5183fe;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
